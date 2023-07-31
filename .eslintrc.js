@@ -1,7 +1,8 @@
 module.exports = {
   extends: [
     'semistandard',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime'
   ],
   rules: {
     // ...
