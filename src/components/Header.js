@@ -2,7 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 
 function Header () {
-  return <>
+  return <header>
     <Link to="/">
           <img src={logo} alt="Logo de Kasa" />
         </Link>
@@ -22,7 +22,7 @@ function Header () {
             </li>
           </ul>
         </nav>
-    </>;
+    </header>;
 }
 
 export default Header;
