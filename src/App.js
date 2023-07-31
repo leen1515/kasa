@@ -1,9 +1,8 @@
 import './App.css';
+import RouterLinks from './routesLinks/RouterLinks';
+
 function App () {
-  return (
-    <div className="App">
-    </div>
-  );
+  return <RouterLinks />;
 }
 
 export default App;
