@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import logoLight from '../assets/logo-light.png';
 
 function Footer () {
-  return <footer>
+  return <footer className='main-footer'>
     <NavLink to="/">
           <img src={logoLight} alt="Logo de Kasa" />
         </NavLink>
