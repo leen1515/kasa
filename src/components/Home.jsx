@@ -5,7 +5,7 @@ import Banner from './Banner';
 function Home () {
   return <>
   <Header/>
-  <main>
+  <main className='main-home'>
   <Banner/>
   </main>
   <Footer/>

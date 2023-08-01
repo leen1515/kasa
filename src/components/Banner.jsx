@@ -1,10 +1,13 @@
 import banner from '../assets/image-banner.png';
 
 function Banner () {
-  return <><h1>Banner</h1>
-  <img src = { banner }>
-  </img>;
-            </>;
+  return <div className='container-banner'>
+            <div className='banner-slogan'>
+                <p>Chez vous, partout et ailleurs</p>
+            </div>;
+            <img className= 'banner-img' src = { banner }>
+            </img>;
+        </div>;
 }
 
 export default Banner;
