@@ -1,0 +1,32 @@
+.home-header {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navigation ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: #FF6060;
+    font-size: 1.5rem;
+  }
+
+  .navigation ul :visited{
+    color: #FF6060;
+
+  }
+  
+  .nav-link {
+    text-align: center;
+    margin: 0 0 0 50px;
+    text-decoration: none;
+    &active {
+      text-decoration : underline;
+    }
+  }
