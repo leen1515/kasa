@@ -1,4 +1,4 @@
-import banner from '../assets/image-banner.png';
+import banner from '../../assets/image-banner.png';
 
 function Banner () {
   return <div className='container-banner'>

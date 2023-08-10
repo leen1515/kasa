@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import logoLight from '../assets/logo-light.png';
+import logoLight from '../../assets/logo-light.png';
 
 function Footer () {
   return <footer className='main-footer'>

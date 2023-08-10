@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import "error404";
-@import "header";
-@import "banner";
-@import "footer";
-@import "home";
+@import "../components/about/about";
+@import "../components/header/header";
+@import "../components/banner/banner";
+@import "../components/footer/footer";
+@import "../pages/home";
