@@ -1,7 +1,7 @@
 import RouterLinks from './routesLinks/RouterLinks';
 
 function App () {
-  return <RouterLinks />;
+  return <RouterLinks/>;
 }
 
 export default App;
