@@ -10,7 +10,7 @@ function LogementDetail (props) {
   }, []);
 
   return <>
-        {'la chambre   ' + roomID + locationSelected}
+        {'le logement   ' + roomID + locationSelected}
        </>;
 }
 
