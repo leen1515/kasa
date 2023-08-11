@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/home/Home';
 import About from '../components/about/About';
-import Error404 from '../components/error404/Error404';
+import Error404 from '../pages/error404/Error404';
 import LogementDetail from '../pages/logementdetail/LogementDetail';
 function RouterLinks (props) {
   return (
