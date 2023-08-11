@@ -4,10 +4,32 @@ body{
     font-size: 2em;
     margin:0;
     overflow-x: hidden;
+    font-family: 'Montserrat',sans-serif;
 }
 
 
 .main-home{
     width:100%;
     position:relative;
+}
+
+
+.logement-list-cards{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    padding:40px 20px;
+    margin:40px auto;
+    background: #F6F6F6;
+    justify-items: center;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration: none;
+    outline-style: none;
 }
