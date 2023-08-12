@@ -1,0 +1,40 @@
+.collapse-container {
+    margin : 0 auto;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    flex-wrap: initial;
+    max-width: 1023px;
+  }
+  
+  .collapse-button {
+    width: 100% ;
+    background-color: #FF6060;
+    border: unset;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    height:47px;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .collapse-displayed{
+    height: auto;
+    text-align: left;
+    background-color: #F6F6F6;
+    font-weight: 400;
+    font-size: 24px;
+    color:#FF6060;
+    border-radius: 0 0 5px 5px;
+    padding-left: 20px;
+    margin-top: 0;
+    padding-top: 20px;
+    transition: height ease-in-out 0.3s;
+  }

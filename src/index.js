@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './sass/main.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'https://kit.fontawesome.com/e4b2bae8e0.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
