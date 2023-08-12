@@ -4,11 +4,14 @@ import { useEffect, useState } from 'react';
 function App () {
   const urlJsonData = process.env.PUBLIC_URL + '/data/logements.json';
   const [logementList, setLogementList] = useState([]);
+
   useEffect(() => {
-    fetch(urlJsonData).then(
-      function (response) {
-        return response.json();
-      }).then(function (dataJson) { return setLogementList(dataJson); });
+    const fetchData = async () => {
+      const data = await fetch(urlJsonData);
+      const dataJson = await data.json();
+      setLogementList(dataJson);
+    };
+    fetchData().catch(console.error);
   }, []);
 
   return <RouterLinks logementList = {logementList}/>;
