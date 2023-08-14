@@ -1,15 +1,20 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Collapse from '../../components/collapse/Collapse';
-function LogementDetail (props) {
+function LogementDetail ({ logementList }) {
   const { roomID } = useParams();
-  const [locationSelected, setLocationSelected] = useState();
+  const [locationIDSelected, setLocationIDSelected] = useState([]);
   useEffect(() => {
-    setLocationSelected(props.logementList.find((location) => (location.id === roomID)));
-  }, []);
+    const getPropsLocation = async () => {
+      setLocationIDSelected(await logementList.find((location) => { return location?.id === roomID; }));
+    }; getPropsLocation();
+  }, [roomID]);
+
+  const { title, location, equipments, description, rating } = locationIDSelected;
 
   return <>
-        <Collapse label = "description" detail = {locationSelected.description} />
+        {'le logement   ' + roomID + description}
+        <Collapse label = "description" detail = {title + location + equipments + description + rating} />
        </>;
 }
 
