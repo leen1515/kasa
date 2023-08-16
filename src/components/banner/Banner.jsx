@@ -4,9 +4,9 @@ function Banner () {
   return <div className='container-banner'>
             <div className='banner-slogan'>
                 <p>Chez vous, partout et ailleurs</p>
-            </div>;
+            </div>
             <img className= 'banner-img' src = { banner }>
-            </img>;
+            </img>
         </div>;
 }
 
