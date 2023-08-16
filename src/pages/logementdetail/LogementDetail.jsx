@@ -12,9 +12,10 @@ function LogementDetail ({ logementList }) {
     };
     getLogement();
   }, []);
-  return <><Collapse label = "description" detail = { logementSelected.description } />
+  return <>
+        <Gallery logementList = {logementList} logementID = {logementID}/>
+  <Collapse label = "description" detail = { logementSelected.description } />
       <Collapse label = "équipement" detail = { logementSelected.equipments } />
-      <Gallery logementList = {logementList} logementID = {logementID}/>
     </>;
 }
 

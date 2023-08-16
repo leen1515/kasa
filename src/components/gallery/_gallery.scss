@@ -1,0 +1,54 @@
+.gallery
+{
+    position: relative;
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+
+.gallery img
+{
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.gallery .left
+{
+    font-size: 4rem;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding-left: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.gallery .right
+{
+    font-size: 4rem;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.gallery .number {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    color: white;
+    font-weight:bold;
+}
+

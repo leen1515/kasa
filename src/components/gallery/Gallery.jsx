@@ -16,11 +16,11 @@ function Gallery ({ logementList, logementID }) {
     const lastImage = actualIndex === getByIdPictures(logementList, logementID).length - 1;
     setActualIndex(lastImage ? 0 : actualIndex + 1);
   };
-  return <> {getByIdPictures(logementList, logementID).length > 1 ? <div className="left"onClick={nextImg}><FontAwesomeIcon icon={faChevronLeft} /></div> : ''}
+  return <div className="gallery"> {getByIdPictures(logementList, logementID).length > 1 ? <div className="left"onClick={nextImg}><FontAwesomeIcon icon={faChevronLeft} /></div> : ''}
     <img src={getByIdPictures(logementList, logementID)[actualIndex]} alt="photo de logement"/>
     {getByIdPictures(logementList, logementID).length > 1 ? <div className="right" onClick={previousImg}><FontAwesomeIcon icon={faChevronRight} /></div> : ''}
     <div className="number">{actualIndex + 1}/{getByIdPictures(logementList, logementID).length}</div>
-</>;
+</div>;
 }
 
 export default Gallery;
