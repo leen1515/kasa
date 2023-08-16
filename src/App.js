@@ -2,7 +2,7 @@ import RouterLinks from './routesLinks/RouterLinks';
 import { useEffect, useState } from 'react';
 
 function App () {
-  const urlJsonData = process.env.PUBLIC_URL + 'data/logements.json';
+  const urlJsonData = process.env.PUBLIC_URL + '/data/logements.json';
   // const [logementList, setLogementList] = useState([]);
   const [logementList, setLogementList] = useState([]);
   const [isDataLoading, setDataLoading] = useState(false);
