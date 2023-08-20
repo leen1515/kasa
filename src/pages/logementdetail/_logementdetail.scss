@@ -1,0 +1,14 @@
+.main-logement{
+    width: 80%;
+    margin:auto;
+}
+
+.collapses-logement{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 100px;
+    flex-wrap: nowrap;
+    width:100%;
+}
+
