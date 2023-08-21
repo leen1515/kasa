@@ -1,6 +1,6 @@
 import GetDataContext from '../../utils/GetDataContext';
 import { useContext } from 'react';
-import { getByIdTags } from './getByIdTags';
+import { getByIdTags } from './getByIdTag';
 
 function Tags ({ logementID }) {
   const { data } = useContext(GetDataContext);
