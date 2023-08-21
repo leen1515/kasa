@@ -13,22 +13,22 @@ function GetStars ({ logementID }) {
     {range.map((rate) => {
       if (getStars >= rate) {
         return (
-            <div
-                key={rate}
-                className="stars-actives"><FontAwesomeIcon icon={faStar} /> </div>
+              <div
+                  key={rate}
+                  className="stars-actives"><FontAwesomeIcon icon={faStar} /> </div>
         );
       } else {
         return (
-                    <div
-                        key={rate}
-                        className="stars-inactives">
-                        <FontAwesomeIcon icon={faStar} />
-                    </div>
+                      <div
+                          key={rate}
+                          className="stars-inactives">
+                          <FontAwesomeIcon icon={faStar} />
+                      </div>
         );
       }
     }
     )
-        }
+    }
     </div>;
 }
 

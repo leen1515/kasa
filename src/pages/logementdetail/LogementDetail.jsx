@@ -4,7 +4,7 @@ import Tags from '../../components/tag/Tags';
 import { useContext, useEffect, useState } from 'react';
 import GetDataContext from '../../utils/GetDataContext';
 import { useParams } from 'react-router';
-import GetStars from '../../components/starts/GetStars';
+import GetStars from '../../components/stars/GetStars';
 
 function LogementDetail () {
   const logementList = useContext(GetDataContext).data;

@@ -1,0 +1,15 @@
+.stars-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width:200px;
+    font-size: 1.5rem;
+}
+
+.stars-actives{
+    color:#FF6060;
+}
+.stars-inactives{
+    color:rgb(227, 227, 227);
+
+}
