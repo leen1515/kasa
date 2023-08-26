@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import GetDataContext from './utils/GetDataContext';
 import Home from './pages/home/Home';
 import Error404 from './pages/error404/Error404';
-import About from './components/about/About';
+import About from './pages/about/About';
 import LogementDetail from './pages/logementdetail/LogementDetail';
 function App () {
   const urlJsonData = process.env.PUBLIC_URL + '/data/logements.json';
@@ -38,7 +38,7 @@ function App () {
   <Route path="/*" element={<Error404 />} />
   <Route path="/about" element={<About />} />
   <Route path="/logements/:logementID" element={<LogementDetail/>}/>
-</Routes>;
+</Routes>
     </GetDataContext.Provider>;
 }
 
