@@ -10,9 +10,12 @@ function Collapse (props) {
                 <i className='fas fa-chevron-up'/>
                 </div>
             </button>
-
-            {open && <div className="collapse-displayed">{props.detail}</div>}
-        </div>
+            {open && <div className="collapse-displayed">{
+            Array.isArray(props.detail)
+              ? (props.detail.map((item) => (
+<li key={props.detail.indexOf(item)}>{item}</li>)))
+              : (<p>{props.detail}</p>)
+            }</div>}</div>
   );
 }
 

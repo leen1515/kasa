@@ -24,15 +24,29 @@
   }
   
   .collapse-displayed{
+    min-height: 150px;
     height: auto;
     text-align: left;
     background-color: #F6F6F6;
     font-weight: 400;
     font-size: 24px;
     color:#FF6060;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
     padding-left: 20px;
     margin-top: 0;
     padding-top: 20px;
     transition: height ease-in-out 0.3s;
   }
+
+.collapse-displayed li{
+  margin:0;
+  list-style-type: none;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.collapse-displayed p{
+  margin:0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
