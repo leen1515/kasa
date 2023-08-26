@@ -7,7 +7,7 @@ import GetDataContext from '../../utils/GetDataContext';
 function Gallery ({ logementID }) {
   const { data } = useContext(GetDataContext);
   const getPictures = getByIdPictures(data, logementID);
-
+  console.log(getByIdPictures(data, logementID));
   const [actualIndex, setActualIndex] = useState(0);
 
   const previousImg = () => {

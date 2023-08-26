@@ -6,7 +6,7 @@ import GetDataContext from '../../utils/GetDataContext';
 function Home () {
   const { data } = useContext(GetDataContext);
   const logementList = data;
-  console.log(logementList);
+  console.log('logement liste', logementList);
 
   return <>
   <main className='main-home'>

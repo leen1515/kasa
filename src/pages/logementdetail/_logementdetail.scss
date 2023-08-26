@@ -1,6 +1,25 @@
 .main-logement{
+    
     width: 80%;
     margin:auto;
+    color:#FF6060;
+
+}
+
+.head-logement{
+    margin-top: 40px;
+ display:flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: space-between;
+}
+
+.logement-container{
+   
+
+}
+.logement__location{
+    font-size: 1.2rem;
 }
 
 .collapses-logement{
@@ -11,4 +30,35 @@
     flex-wrap: nowrap;
     width:100%;
 }
+.profil-container{
+    margin-top: 0;
+    width:fit-content;
+display:flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-end;
+}
 
+.profil-detail{
+    margin:0 0;
+    display:flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.profil__name{
+    flex:0.5;
+    white-space: wrap;
+    text-align: end;
+    width:fit-content;
+    margin: 0 20px 0 0;
+    font-size: 1.2rem;
+}
+
+.profil__photo{
+    width:80px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}

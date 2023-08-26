@@ -5,9 +5,8 @@ import Home from './pages/home/Home';
 import Error404 from './pages/error404/Error404';
 import About from './components/about/About';
 import LogementDetail from './pages/logementdetail/LogementDetail';
-
 function App () {
-  const urlJsonData = process.env.PUBLIC_URL + '/logements.json';
+  const urlJsonData = process.env.PUBLIC_URL + '/data/logements.json';
   const [logementList, setLogementList] = useState([]);
   const [isDataLoading, setDataLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -31,7 +30,7 @@ function App () {
   if (error) {
     return <span>Erreur sur la page</span>;
   }
-  console.log(isDataLoading);
+  console.log(isDataLoading, logementList);
 
   return <GetDataContext.Provider value = {{ data: logementList } }>
 <Routes>
