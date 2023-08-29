@@ -1,0 +1,11 @@
+@mixin resMobile {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin resTablet {
+    @media (min-width: 900px) and (max-width: 1400px) {
+        @content;
+    }
+}

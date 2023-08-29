@@ -1,8 +1,10 @@
+
 .collapse-container {
-    flex:1;
-    margin : 0 auto;
+    width:100%;
+    margin : 40px auto;
     position: relative;
     text-align: center;
+    
   }
   
   .collapse-button {
@@ -22,20 +24,30 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+  @keyframes slideC{
+    from  {
+      min-height: 0;
+      height:0;
+    } 
+to{
+  height:auto;
+} }
+
   .collapse-displayed{
-    min-height: 150px;
-    height: auto;
+    min-height: 50px;
+    height: auto; 
     text-align: left;
     background-color: #F6F6F6;
     font-weight: 400;
     font-size: 24px;
     color:#FF6060;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 20px 20px;
     padding-left: 20px;
     margin-top: 0;
     padding-top: 20px;
-    transition: height ease-in-out 0.3s;
+    padding-bottom:10px;
+    animation: 0.5s ease-out slideC;
+    overflow: hidden;
   }
 
 .collapse-displayed li{
@@ -46,7 +58,7 @@
 }
 
 .collapse-displayed p{
-  margin:0;
+  margin:10px;
   font-size: 1rem;
   line-height: 1.5rem;
 }

@@ -4,6 +4,17 @@
     flex-direction: row;
     width:200px;
     font-size: 1.5rem;
+    @include resTablet {
+        font-size: 1.0rem;
+        width:150px;
+
+
+      }
+    @include resMobile {
+        font-size: 1.0rem;
+        width:100px;
+
+  }
 }
 
 .stars-actives{

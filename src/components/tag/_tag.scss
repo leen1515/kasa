@@ -5,11 +5,13 @@
     align-items: center;
     margin-bottom: 20px;
     margin-top: 25px;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 
 .tag{
     background-color: #FF6060;
-    width: auto;
+    width:fit-content;
     padding: 5px 10px;
     border-radius: 25px;
     color: white;
@@ -19,4 +21,5 @@
     font-size: 0.8rem;
     margin:auto;
     padding:2px 10px;
+    white-space: nowrap;
 }

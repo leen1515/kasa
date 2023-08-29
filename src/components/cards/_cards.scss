@@ -5,8 +5,15 @@
 	line-height: 25px;
 	overflow: hidden;    
     border-radius: 10px;
-}
+    @include resTablet {
 
+        width:90%; 
+      }
+    @include resMobile {
+
+    width:90%; 
+  }
+}
 .card__figure{
     position:relative;
     margin:auto;
@@ -31,6 +38,9 @@
     height:100%;
     background: linear-gradient(#ff606011, rgba(0, 0, 0, 0.508));
 }
+.figure__filter:hover{
+    background: linear-gradient(#ff606011, #ff6060ac);
+}
 .figure__title{
     position:absolute;
     color:white;
@@ -40,5 +50,13 @@
     text-align: left;
     padding:10px;
     width:70%;
+    @include resTablet{
+        width:150px;
+
+      }
+    @include resMobile {
+        width:150px;
+
+      }
 
 }

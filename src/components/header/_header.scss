@@ -6,8 +6,30 @@
     align-items: center;
     padding: 50px;
     font-family: 'Montserrat', sans-serif;
+               
+  @include resTablet {
+    padding: 50px 0;
+    width: 90%;
+
   }
   
+  @include resMobile {
+    padding: 50px 0;
+    width: 90%;
+
+}
+}
+  .logo{
+    @include resTablet {
+      width: 90%;
+  
+    }
+    
+    @include resMobile {
+      width: 80%;
+  
+  }
+  }
   .navigation ul {
     display: flex;
     align-items: center;
@@ -15,6 +37,19 @@
     text-decoration: none;
     color: #FF6060;
     font-size: 1.5rem;
+    column-gap: 30px;
+    @include resTablet {
+      font-size: 1.5rem;
+  
+    }
+    
+    @include resMobile {
+      font-size: 1.0rem;
+      column-gap: 10px;
+      white-space: nowrap;
+
+  }
+    
   }
 
   .navigation ul :visited{
@@ -24,7 +59,6 @@
   
   .nav-link {
     text-align: center;
-    margin: 0 0 0 50px;
     text-decoration: none;
     &active {
       text-decoration : underline;

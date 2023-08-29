@@ -4,6 +4,7 @@
     display: flex;
     height: auto;
     align-items: center;
+
 }
 
 .gallery img
@@ -26,6 +27,14 @@
     color: white;
     cursor: pointer;
     transition: 0.2s;
+    @include resTablet {
+        font-size:3rem;
+
+      }
+    @include resMobile {
+        font-size:2rem;
+
+  }
 }
 
 .gallery .right
@@ -41,14 +50,33 @@
     color: white;
     cursor: pointer;
     transition: 0.2s;
+    @include resTablet {
+        font-size:3rem;
+
+      }
+    @include resMobile {
+        font-size:2rem;
+
+  }
 }
 
 
 .gallery .number {
     position: absolute;
     left: 50%;
-    bottom: 5%;
+    bottom:5px;
+    transform: translate(-50%, 0);
     color: white;
     font-weight:bold;
+    font-size:1rem;
+
+    @include resTablet {
+        font-size:0.8rem;
+
+      }
+    @include resMobile {
+        font-size:0.8rem;
+
+  }
 }
 
