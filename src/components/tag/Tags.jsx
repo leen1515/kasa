@@ -1,6 +1,13 @@
 import GetDataContext from '../../utils/GetDataContext';
 import { useContext } from 'react';
 import { getByIdTags } from './getByIdTag';
+/** @name components */
+
+/**
+ * for to display accomodation's keywords
+ * @param {string} {logementID} selected accommodation's id}
+ * @returns {node} tag for keyword
+ */
 
 function Tags ({ logementID }) {
   const { data } = useContext(GetDataContext);
