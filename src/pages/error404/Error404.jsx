@@ -13,7 +13,7 @@ function Error404 () {
         <h1>404</h1>
         <h2>{messageError}</h2>
         <div className="linkBack">
-            <Link to="/" className="error-link">{messageBack}
+            <Link to= {'/' } className="error-link">{messageBack}
             </Link>
         </div>
     </div>

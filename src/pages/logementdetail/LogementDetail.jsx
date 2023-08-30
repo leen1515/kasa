@@ -6,6 +6,7 @@ import GetDataContext from '../../utils/GetDataContext';
 import { useParams } from 'react-router';
 import GetStars from '../../components/stars/GetStars';
 import Error404 from '../error404/Error404';
+import { useNavigate } from 'react-router-dom';
 
 /** @name pages */
 /**
@@ -24,7 +25,7 @@ function LogementDetail () {
    with ID selected exists in the `logementList`, accomodation's array. In that
    case, it sets the `logementSelected` state variable width the selected logement. */
     if (!selected) {
-      console.log(selected);
+      useNavigate('/error', { replace: true });
     } else {
       setLogementSelected(selected);
     }

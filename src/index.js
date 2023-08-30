@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+
 /** @namespace root */
 /**
 * The code is creating a root element using `ReactDOM.createRoot()` and rendering the JSX code inside
@@ -20,7 +21,7 @@ import Footer from './components/footer/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Header/>
     <App />
     <Footer/>

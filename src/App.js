@@ -40,6 +40,7 @@ function App () {
     return <span>Erreur sur la page</span>;
   }
   return !isDataLoading && <GetDataContext.Provider value = {{ data: logementList } }>
+
 <Routes>
   <Route path="/" element= {<Home/>}/>
   <Route path="/*" element={<Error404/>}/>
