@@ -15,9 +15,9 @@ function Collapse (props) {
     <div className="collapse-container">
       {
      /* used to display a collapsible section with a button that toggles the visibility of the content. */}
-      <button className="collapse-button" onClick={() => setOpen(!open)} >{props.label}
+      <button className= "collapse-button" onClick={() => setOpen(!open)} >{props.label}
         <div className="arrow">
-          {open ? (<IconesSvg iconeS="up"/>) : (<IconesSvg iconeS="down"/>)}
+          {open ? (<div className="svg-animate-in"><IconesSvg iconeS="up"/></div>) : (<div className="svg-animate-out"><IconesSvg iconeS="down"/></div>)}
         </div>
       </button>
       {open && <div className="collapse-displayed">{

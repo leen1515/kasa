@@ -34,7 +34,7 @@ to{
 } }
 
   .collapse-displayed{
-    min-height: 50px;
+    min-height: 100px;
     height: auto; 
     text-align: left;
     background-color: #F6F6F6;
@@ -61,4 +61,24 @@ to{
   margin:10px;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.svg-animate-in{
+display : flex;
+  transform : rotate(180deg);
+  transition: transform 1s;
+  width: fit-content;
+}
+.svg-animate-out{
+  align-items: center;
+  display : flex;
+
+  transform : rotate(-180deg);
+  transition: transform 1s;
+  width: fit-content;
+}
+.svg-animate-out :hover{
+  transform : rotate(0deg);
+  transition: transform 1s;
+  width: fit-content;
 }

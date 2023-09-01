@@ -24,14 +24,14 @@ accommodation. */
         return (
               <div
                   key={rate}
-                  className="stars-actives"><IconesSvg iconeS = "star"/> </div>
+                  className="stars-actives"><IconesSvg iconeS = "starColored"/> </div>
         );
       } else {
         return (
                       <div
                           key={rate}
                           className="stars-inactives">
-                          <IconesSvg iconeS="star"/>
+                          <IconesSvg iconeS="starGrey"/>
                       </div>
         );
       }
