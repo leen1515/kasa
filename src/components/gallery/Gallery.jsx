@@ -1,8 +1,7 @@
 import { useState, useContext } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { getByIdPictures } from './getByIdPictures';
 import GetDataContext from '../../utils/GetDataContext';
+import IconesSvg from '../../utils/icones/IconesSvg';
 /** @name components */
 /** @namespace components */
 /**
@@ -35,12 +34,12 @@ image being displayed is the last image in the gallery. It assigns `true` to the
     const lastImage = actualIndex === getPictures.length - 1;
     setActualIndex(lastImage ? 0 : actualIndex + 1);
   };
-  return <div className="gallery"> {getPictures.length > 1 ? <div className="left" onClick={previousImg}><FontAwesomeIcon icon={faChevronLeft} /></div> : ''}
+  return <div className="gallery"> {getPictures.length > 1 ? <div className="left" onClick={previousImg}><IconesSvg iconeS="left" /></div> : ''}
 {/* display an image from the `getPictures` array based on the `actualIndex` state variable. The `src` attribute of
     the `img` tag is set to the URL of the image at the current index. */}
     <img src={getPictures[actualIndex]} alt="photo de logement" />
     {/* display only if selected accommodation have more than one image */}
-    {getPictures.length > 1 ? <div className="right" onClick={nextImg}><FontAwesomeIcon icon={faChevronRight} /></div> : ''}
+    {getPictures.length > 1 ? <div className="right" onClick={nextImg}><IconesSvg iconeS= "right"/></div> : ''}
     <div className="number">{actualIndex + 1}/{getPictures.length}</div>
   </div>;
 }

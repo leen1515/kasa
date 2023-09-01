@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import IconesSvg from '../../utils/icones/IconesSvg';
 /** @name components */
 
 /**
@@ -18,7 +17,7 @@ function Collapse (props) {
      /* used to display a collapsible section with a button that toggles the visibility of the content. */}
       <button className="collapse-button" onClick={() => setOpen(!open)} >{props.label}
         <div className="arrow">
-          {open ? (<FontAwesomeIcon icon={faChevronUp} />) : (<FontAwesomeIcon icon={faChevronDown} />)}
+          {open ? (<IconesSvg iconeS="up"/>) : (<IconesSvg iconeS="down"/>)}
         </div>
       </button>
       {open && <div className="collapse-displayed">{
@@ -29,5 +28,4 @@ function Collapse (props) {
       }</div>}</div>
   );
 }
-
 export default Collapse;

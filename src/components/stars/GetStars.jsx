@@ -1,8 +1,7 @@
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { getByIdStars } from './getByIdStars';
 import { useContext } from 'react';
 import GetDataContext from '../../utils/GetDataContext';
+import IconesSvg from '../../utils/icones/IconesSvg';
 /** @name components */
 
 /**
@@ -25,14 +24,14 @@ accommodation. */
         return (
               <div
                   key={rate}
-                  className="stars-actives"><FontAwesomeIcon icon={faStar} /> </div>
+                  className="stars-actives"><IconesSvg iconeS = "star"/> </div>
         );
       } else {
         return (
                       <div
                           key={rate}
                           className="stars-inactives">
-                          <FontAwesomeIcon icon={faStar} />
+                          <IconesSvg iconeS="star" />
                       </div>
         );
       }
