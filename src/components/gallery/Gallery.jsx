@@ -39,8 +39,8 @@ image being displayed is the last image in the gallery. It assigns `true` to the
     the `img` tag is set to the URL of the image at the current index. */}
     <img src={getPictures[actualIndex]} alt="photo de logement" />
     {/* display only if selected accommodation have more than one image */}
-    {getPictures.length > 1 ? <div className="right" onClick={nextImg}><IconesSvg iconeS= "right"/></div> : ''}
-    <div className="number">{actualIndex + 1}/{getPictures.length}</div>
+    {getPictures.length > 1 && <><div className="right" onClick={nextImg}><IconesSvg iconeS= "right"/></div>
+    <div className="number">{actualIndex + 1}/{getPictures.length}</div></>}
   </div>;
 }
 
