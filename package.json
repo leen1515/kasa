@@ -1,6 +1,6 @@
 {
   "name": "kasa",
-  "homepage": "https://leen1515.github.io/kasa",
+  "homepage": "localhost",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

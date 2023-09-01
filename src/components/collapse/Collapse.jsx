@@ -16,7 +16,7 @@ function Collapse (props) {
     <div className="collapse-container">
       {
      /* used to display a collapsible section with a button that toggles the visibility of the content. */}
-      <button className={`collapse-button${open ? ' button-open' : ''}`} onClick={() => setOpen(!open)} >{props.label}
+      <button className="collapse-button" onClick={() => setOpen(!open)} >{props.label}
         <div className="arrow">
           {open ? (<FontAwesomeIcon icon={faChevronUp} />) : (<FontAwesomeIcon icon={faChevronDown} />)}
         </div>
