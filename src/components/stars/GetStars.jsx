@@ -31,7 +31,7 @@ accommodation. */
                       <div
                           key={rate}
                           className="stars-inactives">
-                          <IconesSvg iconeS="star" />
+                          <IconesSvg iconeS="star"/>
                       </div>
         );
       }
